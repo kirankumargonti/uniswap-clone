@@ -1,7 +1,7 @@
 # Uniswap Clone
 
-<img src="./public/screenshots/screenshot_2.png">
-<img src="./public/screenshots/screenshot_1.png">
+[![screenshot](screenshots/screenshot_2.png)](https://uniswap-clone-mu.vercel.app/)
+[![screenshot](screenshots/screenshot_1.png)](https://uniswap-clone-mu.vercel.app/)
 
 ## System Requirements
 
@@ -31,5 +31,4 @@
 
 **After cloning, modify the given .env.local file, and populate it with the following variables**
 
-    INFURA_KEY = 'Update your Infura Key' 
- 
+    INFURA_KEY = 'Update your Infura Key'
