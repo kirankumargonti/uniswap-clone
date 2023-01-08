@@ -1,7 +1,7 @@
 # Uniswap Clone
 
-<img src="./public/screenshots/screenshot_2.png">
-<img src="./public/screenshots/screenshot_1.png">
+<img src="public/screenshots/screenshot_2.png">
+<img src="public/screenshots/screenshot_1.png">
 
 ## System Requirements
 
