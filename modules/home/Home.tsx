@@ -19,7 +19,9 @@ const Home: React.FunctionComponent = () => {
         <div className='home__container__banner'>
           <h1>Trade crypto & NFTs with confidence</h1>
           <p>Buy, sell, and explore tokens and NFTs</p>
-          <button>Get Started</button>
+          <Link href='/swap'>
+            <button>Get Started</button>
+          </Link>
         </div>
       </div>
     </section>
