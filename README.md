@@ -1,8 +1,5 @@
 # Uniswap Clone
 
-[![screenshot](screenshots/screenshot_2.png)](https://uniswap-clone-mu.vercel.app/)
-[![screenshot](screenshots/screenshot_1.png)](https://uniswap-clone-mu.vercel.app/)
-
 ## System Requirements
 
     # Node.js 16.8 or later.
