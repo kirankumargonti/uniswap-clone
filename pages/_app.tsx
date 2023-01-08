@@ -1,6 +1,22 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+//CSS
+import '../styles/index.scss'
+import '@uniswap/widgets/fonts.css'
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+import type {AppProps} from 'next/app'
+import {Web3OnboardProvider} from '@web3-onboard/react'
+
+// Components
+import Layout from '../shared/layout/Layout'
+
+// Config
+import web3Onboard from '../config/walletConfig'
+
+export default function App({Component, pageProps}: AppProps) {
+  return (
+    <Web3OnboardProvider web3Onboard={web3Onboard}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </Web3OnboardProvider>
+  )
 }

@@ -1,0 +1,126 @@
+.header {
+  @include layoutWithGrid(auto-fit, 150px, 3fr);
+  padding: 0.6rem;
+  @include mQ($sm) {
+    display: flex;
+  }
+  &__logo {
+    display: none;
+    @include mQ($sm) {
+      display: block;
+      min-height: 48px !important;
+      min-width: 48px !important;
+      overflow: hidden;
+      a {
+        img {
+          min-height: 48px !important;
+          min-width: 48px !important;
+        }
+      }
+    }
+  }
+  &__nav {
+    max-width: 380px;
+    position: relative;
+    @include layoutWithFlex(center, space-between);
+    a {
+      color: $text-secondary;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 12px;
+      &:hover {
+        background: #99a1bd14;
+        transition: all 250ms ease-in-out;
+        padding: 8px 16px;
+      }
+      &:first-child {
+        background: transparent;
+        padding: 0;
+        min-width: 48px !important;
+        min-height: 48px !important;
+        &:hover {
+          all: inherit;
+          cursor: pointer;
+        }
+      }
+    }
+
+    p {
+      color: $text-secondary;
+      font-weight: 500;
+      padding: 8px 16px;
+      &:hover {
+        &:hover {
+          background: #99a1bd14;
+          border-radius: 12px;
+          transition: all 250ms ease-in-out;
+          padding: 8px 16px;
+        }
+      }
+    }
+    .active {
+      background: #99a1bd14;
+      padding: 8px 16px;
+      border-radius: 12px;
+      color: $white-color;
+    }
+
+    @include mQ($sm) {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      max-width: inherit;
+      padding: 0;
+      a {
+        padding: 4px 8px;
+        &:hover {
+          padding: 4px 8px;
+        }
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+  }
+  &__search {
+    &__wrapper {
+      background: $search-background;
+      border: 1px solid $border-color;
+      border-radius: 12px;
+      padding: 0 20px;
+      max-width: 640px;
+      margin: auto;
+      @include layoutWithFlex(center, flex-start);
+      height: 100%;
+      @include mQ($xl) {
+        display: none;
+      }
+      input {
+        border: 0;
+        outline: none;
+        margin-left: 10px;
+        padding: 8px 0;
+        width: 100%;
+        background-color: transparent;
+        color: $white-color;
+        &::placeholder {
+          color: $text-secondary;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  &__connect {
+    margin-left: auto;
+    button {
+      background-color: $brand-color;
+      color: $white-color;
+      font-weight: 500;
+      border: 0;
+      outline: none;
+      padding: 0.5rem 1rem;
+      border-radius: 33px;
+      cursor: pointer;
+    }
+  }
+}

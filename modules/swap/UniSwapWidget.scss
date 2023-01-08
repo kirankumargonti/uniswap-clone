@@ -1,0 +1,10 @@
+.swap {
+  @include layoutWithFlex(center, center);
+  padding: 68px 8px 0px;
+  .swap__widget {
+    width: 480px !important;
+    @include mQ($sm) {
+      width: 100% !important;
+    }
+  }
+}

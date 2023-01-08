@@ -1,0 +1,62 @@
+// Variables
+
+$background: linear-gradient(rgb(7, 8, 22) 0%, rgb(7, 8, 22) 100%);
+$text-secondary: #98a1c0;
+$white-color: #ffffff;
+$brand-color: #4c82fb;
+$border-color: #555555;
+$widget-gradient: radial-gradient(
+  72.04% 72.04% at 50% 3.99%,
+  rgb(255, 55, 235) 0%,
+  rgba(166, 151, 255, 0) 100%
+);
+$search-background: #ffffff15;
+$text-gradient: linear-gradient(
+    20deg,
+    rgb(255, 244, 207) 10%,
+    rgb(255, 87, 218) 100%
+  )
+  padding-box text;
+
+$btn-gradient: linear-gradient(
+  93.06deg,
+  rgb(255, 0, 199) 2.66%,
+  rgb(255, 159, 251) 98.99%
+);
+
+$btn-box-shadow: rgb(255, 0, 199) 0px 0px 16px 0px;
+
+//breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+//mixins
+@mixin layoutWithFlex($align, $justify, $wrap: null, $direction: null) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  @if ($wrap) {
+    flex-wrap: $wrap;
+  }
+  @if ($direction) {
+    flex-direction: $direction;
+  }
+}
+
+@mixin layoutWithGrid($column: auto-fit, $min: 150px, $max: 2fr, $gap: null) {
+  display: grid;
+  grid-template-columns: repeat($column, minmax($min, $max));
+  @if ($gap) {
+    gap: gap;
+  }
+}
+
+//Media Query Mixin
+@mixin mQ($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}

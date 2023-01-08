@@ -13,11 +13,33 @@
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
+    "@uniswap/widgets": "^2.23.1",
+    "@walletconnect/ethereum-provider": "^2.1.5",
+    "@walletconnect/jsonrpc-provider": "^1.0.6",
+    "@web3-onboard/coinbase": "^2.2.0",
+    "@web3-onboard/dcent": "^2.2.2",
+    "@web3-onboard/enkrypt": "^2.0.0",
+    "@web3-onboard/gnosis": "^2.1.5",
+    "@web3-onboard/injected-wallets": "^2.4.0",
+    "@web3-onboard/keepkey": "^2.3.2",
+    "@web3-onboard/keystone": "^2.3.2",
+    "@web3-onboard/ledger": "^2.3.2",
+    "@web3-onboard/react": "^2.5.3",
+    "@web3-onboard/sequence": "^2.0.4",
+    "@web3-onboard/tallyho": "^2.0.1",
+    "@web3-onboard/walletconnect": "^2.2.2",
     "eslint": "8.30.0",
     "eslint-config-next": "13.1.1",
+    "ethers": "^5.7.2",
+    "jotai-immer": "^0.1.0",
     "next": "13.1.1",
+    "qs": "^6.11.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "tslib": "^2.4.1",
     "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "sass": "^1.57.1"
   }
 }
