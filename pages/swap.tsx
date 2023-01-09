@@ -11,7 +11,7 @@ const Swap: NextPage = () => {
         title='Uniswap Interface'
         description='Uniswap is a decentralized cryptocurrency exchange that uses a set of smart contracts to execute trades on its exchange. It`s an open source project and falls into the category of a DeFi product because it uses smart contracts to facilitate trades'
       />
-      <UniSwapWidget />
+      {/* <UniSwapWidget /> */}
     </>
   )
 }
