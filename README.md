@@ -28,4 +28,4 @@
 
 **After cloning, modify the given .env.local file, and populate it with the following variables**
 
-    INFURA_KEY = 'Update your Infura Key'
+    NEXT_PUBLIC_INFURA_KEY = 'Update your Infura Key'

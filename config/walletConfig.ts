@@ -12,7 +12,7 @@ import sequenceModule from '@web3-onboard/sequence'
 import tallyHoModule from '@web3-onboard/tallyho'
 import enkryptModule from '@web3-onboard/enkrypt'
 
-const INFURA_KEY = process.env.INFURA_KEY as string
+const INFURA_KEY = process.env.NEXT_PUBLIC_INFURA_KEY
 
 const chains = [
   {

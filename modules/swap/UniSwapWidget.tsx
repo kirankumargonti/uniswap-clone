@@ -1,3 +1,5 @@
+import '@uniswap/widgets/fonts.css'
+
 import {useConnectWallet} from '@web3-onboard/react'
 import {ethers} from 'ethers'
 import {useEffect, useState} from 'react'
@@ -5,7 +7,7 @@ import {useEffect, useState} from 'react'
 //@ts-ignore
 import {SwapWidget, Theme} from '@uniswap/widgets'
 
-const INFURA_KEY = process.env.INFURA_KEY as string
+const INFURA_KEY = process.env.NEXT_PUBLIC_INFURA_KEY
 
 const UniSwapWidget: React.FunctionComponent<any> = (props) => {
   const [{wallet}, connect] = useConnectWallet()

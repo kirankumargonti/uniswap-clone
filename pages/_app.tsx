@@ -1,6 +1,6 @@
 //CSS
-import '../styles/index.scss'
 import '@uniswap/widgets/fonts.css'
+import '../styles/index.scss'
 
 import type {AppProps} from 'next/app'
 import {Web3OnboardProvider} from '@web3-onboard/react'
