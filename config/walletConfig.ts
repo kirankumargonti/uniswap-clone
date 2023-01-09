@@ -74,15 +74,15 @@ const enkrypt = enkryptModule()
 const wallets = [
   injected,
   coinbase,
+  dcent,
   walletConnect,
-  // dcent,
-  // ledger,
-  // keystone,
-  // keepkey,
-  // gnosis,
-  // sequence,
-  // tally,
-  // enkrypt,
+  ledger,
+  keystone,
+  keepkey,
+  gnosis,
+  sequence,
+  tally,
+  enkrypt,
 ]
 
 const appMetadata = {
